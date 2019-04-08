@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 import { AuthUser } from 'main/core/models/auth';
-import { User } from 'main/modules/users/models/user';
+import { User } from 'main/core/models/user';
 
 export enum ActionTypes {
   Authorize = '[Authentication] Authorize User',

@@ -1,7 +1,5 @@
-import { NgModule, Optional, SkipSelf } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DomSanitizer } from '@angular/platform-browser';
-import { MatIconRegistry } from '@angular/material';
 import { GoogleApiModule, NG_GAPI_CONFIG, NgGapiClientConfig } from 'ng-gapi';
 import { environment } from 'environments/environment';
 
@@ -41,21 +39,4 @@ const gapiClientConfig: NgGapiClientConfig = {
     { provide: GoogleOauthService, useClass: GoogleOauthService },
   ]
 })
-export class CoreModule {
-  socialLinks = ['customLink', 'facebook', 'github', 'googlePlus', 'linkedin', 'medium', 'stackoverflow', 'twitter', 'website'];
-
-  constructor(
-    @Optional() @SkipSelf() parentModule: CoreModule,
-    private domSanitizer: DomSanitizer,
-    private matIconRegistry: MatIconRegistry
-  ) {
-    if (parentModule) {
-      throw new Error(
-        'CoreModule is already loaded. Import it in the AppModule only');
-    }
-    // Register social icons on module start
-    this.socialLinks.forEach(medium => {
-      this.matIconRegistry.addSvgIcon(medium, this.domSanitizer.bypassSecurityTrustResourceUrl(`assets/icons/social/${medium}.svg`));
-    });
-  }
-}
+export class CoreModule {}

@@ -1,15 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
+import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 const routes: Routes = [{
   path: '',
-  component: HomePageComponent,
-  children: [{
-    path: 'applications',
-    loadChildren: '../applications/applications.module#ApplicationsModule'
-  }]
+  component: HomePageComponent
 }];
 
 @NgModule({

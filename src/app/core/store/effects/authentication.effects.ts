@@ -11,7 +11,7 @@ import { Navigate } from '../actions/router.actions';
 
 import { AppState, isLoggedOut } from 'main/core/store/reducers';
 import { GoogleOauthService } from 'main/core/services/google-oauth/google-auth.service';
-import { User } from 'main/modules/users/models/user';
+import { User } from 'main/core/models/user';
 
 @Injectable()
 export class AuthenticationEffects {

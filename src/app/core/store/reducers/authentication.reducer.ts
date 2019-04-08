@@ -1,6 +1,6 @@
 import { ActionTypes, Union } from '../actions/authentication.actions';
 import { AuthUser } from 'main/core/models/auth';
-import { User } from 'main/modules/users/models/user';
+import { User } from 'main/core/models/user';
 
 export interface AuthenticationState {
   authorized: boolean;

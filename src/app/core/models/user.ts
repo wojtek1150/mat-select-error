@@ -1,12 +1,10 @@
-import { Roles } from './role';
-
 export class User {
   id: string;
   firstName: string;
   lastName: string;
   email: string;
   avatar: string;
-  roles: Roles;
+  roles: any;
 
   constructor({ id = '', firstName = '', lastName = '', email = '', avatar = '', roles = {} } = {}) {
     this.id = id;

@@ -6,7 +6,7 @@
 export const environment = {
   production: false,
   apiServerUrl: 'http://dummy.restapiexample.com/api/v1',
-  oauthClient: '617546912022-i8qkb332mrdv1c958sscl598b0i824o8.apps.googleusercontent.com'
+  oauthClient: '727159188569-02nk6pmcq5avecdffhp9jekog6se42d1.apps.googleusercontent.com'
 };
 
 /*

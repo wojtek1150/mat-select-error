@@ -1,0 +1,25 @@
+<div class="content">
+
+  <mat-card class="form" [formGroup]="formGroup">
+    <div formGroupName="personalData">
+      <mat-form-field>
+        <mat-label>First Name *</mat-label>
+        <input matInput placeholder="" formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Last Name *</mat-label>
+        <input matInput placeholder="" formControlName="lastName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Your Gender *</mat-label>
+        <mat-select formControlName="gender">
+          <mat-option value="male">Male</mat-option>
+          <mat-option value="female">Female</mat-option>
+          <mat-option value="other">Non-binary / Other</mat-option>
+          <mat-option value="decline">Rather not say</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </mat-card>
+
+</div>

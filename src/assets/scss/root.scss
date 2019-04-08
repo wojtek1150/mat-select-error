@@ -1,0 +1,74 @@
+@import 'mixins';
+
+// CORE
+@include mat-core();
+
+// APP THEME
+$gde__app__theme: mat-light-theme(
+    mat-palette($mat-blue),
+    mat-palette($mat-purple),
+    mat-palette($mat-red)
+);
+@include angular-material-theme($gde__app__theme);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: $color__black;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  color: $color__light-blue;
+}
+
+h1, h2, h3, h4, h5, strong {
+  @extend %font-ubuntu-bold;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+.mat-dialog-container {
+  max-height: 80vh !important;
+}
+
+.color--blue {
+  color: $color__light-blue;
+}
+
+.color--purple {
+  color: $color__purple;
+}
+
+.color--orange {
+  color: $color__orange;
+}
+
+.color--red {
+  color: $color__red;
+}
+
+.color--green {
+  color: $color__green;
+}

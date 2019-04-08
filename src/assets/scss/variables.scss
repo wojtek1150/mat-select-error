@@ -1,0 +1,63 @@
+@import '~@angular/material/theming';
+
+// COLORS
+// https://material.io/guidelines/style/color.html#color-color-palette
+
+// BREAKPOINTS
+// https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+
+// GREYSCALE COLORS
+$color-grey__1: #f7f7f7;
+$color-grey__2: #d8d8d8;
+$color-grey__3: #c4c4c4;
+$color-grey__4: #b0b0b0;
+$color-grey__5: #9d9d9d;
+$color-grey__6: #898989;
+$color-grey__7: #757575;
+$color-grey__8: #616161;
+$color-grey__9: #4e4e4e;
+
+// BASE COLORS
+$color__green: #00d693;
+$color__blue: #5462fb;
+$color__purple: #9743d6;
+$color__violet: #51509c;
+$color__pink: #fe448c;
+$color__red: #ff655e;
+$color__yellow: #ffca71;
+$color__orange: #ff655e;
+$color__black: #3a3a3a;
+$color__white: #ffffff;
+
+// ACCENT COLORS
+$color__light-blue: #549ffb;
+$color__moderate-blue: #56abcb;
+$color__dark-blue: #5462fb;
+$color__light-pink: #ff949d;
+
+// GRADIENTS
+$gradient__green: linear-gradient(to right, #00d693, #56abcb);
+$gradient__blue: linear-gradient(to right, #5462fb, #549ffb);
+$gradient__pink: radial-gradient(#ff949d, #fe448c);
+$gradient__violet: linear-gradient(to right, #9743d6, #51509c);
+$gradient__orange: linear-gradient(to right, #ffca71, #ff655e);
+
+// FONTS
+// https://material.io/guidelines/style/typography.html
+
+// FONTS--SIZES
+$font-size__h4: 34px;
+$font-size__body1: 16px;
+$font-size__body2: 14px;
+$font-size__caption: 12px;
+
+// FONTS--FAMILIES
+$font-family__roboto: 'Roboto', 'Helvetica Neue', sans-serif;
+$font-family__ubuntu: 'Ubuntu', sans-serif;
+
+// BREAKPOINTS
+$breakpoint-xxsmall: 600px;
+$breakpoint-xsmall: 840px;
+$breakpoint-small: 1024px;
+$breakpoint-medium: 1440px;
+$breakpoint-large: 1920px;

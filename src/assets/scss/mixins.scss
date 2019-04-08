@@ -1,0 +1,87 @@
+@import "variables";
+
+%font-ubuntu-bold {
+  font-family: $font-family__ubuntu;
+  font-weight: bold;
+}
+
+@mixin position($position, $top:null, $right:null, $bottom:null, $left:null, $z-index:null) {
+  position: $position;
+  @if ($top) {
+    top: $top;
+  }
+  @if ($right) {
+    right: $right;
+  }
+  @if ($bottom) {
+    bottom: $bottom;
+  }
+  @if ($left) {
+    left: $left;
+  }
+  @if ($z-index) {
+    z-index: $z-index;
+  }
+}
+
+@mixin host() {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@mixin breakpoint-up($min) {
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($max) {
+  @media (max-width: $max - 1) {
+    @content;
+  }
+}
+
+@mixin breakpoint-range($min, $max) {
+  @media (min-width: $min) and (max-width: $max - 1) {
+    @content;
+  }
+}
+
+@mixin xx-small() {
+  @media (max-width: $breakpoint-xxsmall - 1) {
+    @content;
+  }
+}
+
+@mixin x-small() {
+  @media (max-width: $breakpoint-xsmall - 1) {
+    @content;
+  }
+}
+
+@mixin small() {
+  @media (min-width: $breakpoint-xsmall) and (max-width: $breakpoint-small - 1) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium - 1) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large - 1) {
+    @content;
+  }
+}
+
+@mixin x-large() {
+  @media (min-width: $breakpoint-large) {
+    @content;
+  }
+}
